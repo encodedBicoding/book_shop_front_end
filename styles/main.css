@@ -150,6 +150,7 @@
   margin-left: 26%;
   margin-top: 7%;
   width: 100%;
+  height: fit-content;
   padding: 10px;
   position: relative;
   background-color: rgba(245, 241, 241, 0.959);
@@ -157,6 +158,7 @@
 .book_shelf{
   position: absolute;
   will-change: contents;
+  height: fit-content;
   width: 100%;
   z-index: -1;
   margin: 0;
@@ -236,6 +238,8 @@
 .featured_books_cell img{
   height: 300px;
   width: 200px;
+  border-radius: 3px;
+  box-shadow: 1px 10px 3px 1px rgba(95, 89, 89, 0.2);
 }
 .abs_dt{
   position: absolute;
@@ -254,22 +258,38 @@
   margin-left: 15%;
   letter-spacing: normal;
 }
+.lt_bk_dt{
+  letter-spacing: normal;
+  position: relative;
+  margin-left: 6%;
+}
 .bk_flex{
   display: flex;
   flex-direction: column;
+}
+.ra_flx_lt{
+  width: 100%;
 }
 .bdl_avial{
   font-size: 11px;
   margin-bottom: 9%;
 }
+.ra_avial{
+  font-size: 11px;
+  margin-bottom: 7%;
+  margin-top: 6%;
+}
 .av{
   color:rgb(17, 204, 17);
 }
 .nt_av{
-  color: red;
+  color: rgb(241, 37, 37);
 }
 .bk_t #bk_t_h{
   font-size: 15px;
+}
+.bk_t #ra_t_h{
+  font-size: 13px;
 }
 .bk_t #bt_t_a{
   font-size: 10px;
@@ -277,7 +297,8 @@
 }
 .bk_t #bt_t_y,
 .bk_type span,
-.rgt_rt_c span{
+.rgt_rt_c span,
+.rgt_rt_c_ra span{
   font-size: 10px;
 }
 .bk_type #bk_type_g,
@@ -288,10 +309,22 @@
   margin-top: 9%;
   padding: 0;
 }
+.rgt_rt_c_ra #rgt_rt_ra{
+  display: inline-block;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+}
 .rgt{
   display: flex;
   flex-direction: row;
   margin-top: 10%;
+}
+.rgt_ra{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
 }
 .flx_rw{
   display: flex;
@@ -300,12 +333,21 @@
   flex-direction: row;
   text-align: center;
 }
+.ra_flx_rt{
+  margin-top: 8.2%;
+}
 .rgt_rt_c{
   width: 55%;
   margin: 0;
   border-right: .8px solid grey;
 }
-.rgt_rt_star{
+.rgt_rt_c_ra{
+  width: 54%;
+  margin: 0;
+  border-right: .6px solid grey;
+}
+.rgt_rt_star,
+.rgt_rt_star_ra{
   width: fit-content;
 }
 .rgt_rt_star span.active{
@@ -313,21 +355,38 @@
   margin-right: 3px;
   color: goldenrod;
 }
+.rgt_rt_star_ra span.active{
+  font-size: 12px;
+  margin-right: 3px;
+  color: goldenrod;
+}
+.rgt_rt_star_ra span.inactive{
+  font-size: 12px;
+  margin-right: 3px;
+  color: grey
+}
 .rgt_rt_star span.inactive{
   font-size: 14px;
   margin-right: 3px;
   color: gray;
 }
-.rgt_rt_lt{
+.rgt_rt_lt,
+.rgt_rt_lt_ra{
   margin-left: 10%;
   margin-right: 4%;
 }
-.rgt_rt_lt p{
+
+.rgt_rt_lt p,
+.rgt_rt_lt_ra p{
   font-size: 10px;
   margin-top: 8%;
 }
 .rgt_rt_lt span{
   color: grey
+}
+.rgt_rt_lt_ra span{
+  color: gray;
+  font-size: 12px;
 }
 /* Flickity styles to sooth my taste */
 .flickity-page-dots{
@@ -345,4 +404,35 @@
 }
 .flickity-button{
   display: none;
+}
+.recently_added_books,
+.all_available_books{
+  width: 100%;
+}
+
+.all_available_books{
+  width: 100%;
+  height: 100%;
+}
+.r_a_container{
+  position: relative;
+  display: inline-block;
+  width: 22%;
+  height: 24%;
+  cursor: pointer;
+  transition: all .4s;
+  margin: 10px 2% 0 0;
+}
+.r_a_container:hover{
+  background-color: rgb(240, 234, 234);
+  box-shadow: 2px 4px 13px 0 rgba(000,000,000, .3);
+  border-radius: 3px;
+}
+.ra_flx{
+  display: flex;
+  flex-direction: row;
+}
+.ra_flx img{
+  width: 43%;
+  height: 40%;
 }

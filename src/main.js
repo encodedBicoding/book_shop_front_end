@@ -182,15 +182,39 @@ const books = [
 ]
 const startApp = () => {
   const featured_image_container = document.querySelector('.featured_books');
+  const recently_added_books = document.querySelector('.recently_added_books');
+  const all_books = document.querySelector('.all_available_books');
   
-  books.forEach((book) => {
-    const fbe = document.createElement('div');
-    fbe.setAttribute('class', 'featured_books_cell');
-    const child = createFeatChild(book);
-    fbe.innerHTML = child;
-    featured_image_container.append(fbe)
-    return fbe;
-  });
+  function popluate(component){
+    if(component === 'featured') {
+      return books.forEach((book) => {
+        const fbe = document.createElement('div');
+        fbe.setAttribute('class', 'featured_books_cell');
+        const child = createFeatChild(book);
+        fbe.innerHTML = child;
+        featured_image_container.append(fbe);
+      });
+    };
+    if( component === 'recent') {
+      return books.reverse().slice(7, books.length).forEach((book) => {
+        const div = document.createElement('div')
+        div.setAttribute('class', 'r_a_container');
+        const child = createRecentAddedComponent(book)
+        div.innerHTML = child;
+        recently_added_books.append(div)
+      })
+    }
+
+    if(component === 'all_books') {
+      return books.forEach((book) => {
+        const div = document.createElement('div')
+        div.setAttribute('class', 'r_a_container');
+        const child = createRecentAddedComponent(book)
+        div.innerHTML = child;
+        all_books.append(div)
+      })
+    }
+  }
 
   function calcStarsToReturn(obj){
     const doc = document.createElement('div');
@@ -255,6 +279,53 @@ const startApp = () => {
   </div>
   <img src='${obj.cover_image}' alt='${obj.alt}'> `
   }
+
+  function createRecentAddedComponent(obj) {
+    return `
+        <div class='r_a_content ra_flx'>
+            <img src='${obj.cover_image}' alt='${obj.alt}'/>
+            <div class='ra_flx_lt bk_flex'>
+            <div class='lt_bk_dt lt_flex'>
+              <p class='${obj.is_available ? 'bdl av ra_avial' : 'bdl nt_av ra_avial'}'>
+              ${obj.is_available ? 'Available' : 'Borrowed Out'}
+              </p>
+              <div class='bdl bk_t'>
+                <h4 id='ra_t_h'>${obj.title}</h4>
+                <p id='bt_t_a'>${obj.authors.join(',')}</p>
+                <p id='bt_t_y'>${obj.year}</p>
+              </div>
+              <div class='bdl bk_type'>
+                <span>${obj.genre.join(', ')}</span>
+              </div>
+              <div class='bdl bdl_flex rgt_ra'>
+                <div class='rgt_rt_c_ra'>
+                    <p id='rgt_rt_ra'>Ratings: </p>
+                    <span>${obj.rating.toFixed(1)}</span>
+                    <div class='rgt_rt_star_ra'>
+                    ${
+                      calcStarsToReturn(obj)
+                    }
+                    </div>
+                </div>
+                <div class='rgt_rt flx_rw ra_flx_rt'>
+                  <div class='rgt_rt_lt_ra'>
+                    <span class='fa fa-users'/>
+                    <p>${obj.reviews}</p>
+                  </div>
+                <div class='rgt_rt_lt_ra'>
+                  <span class='fa fa-heart'/>
+                  <p>${obj.likes}</p>
+                </div>
+            </div>
+           </div>
+          </div>
+       </div>
+      </div>
+    `
+  }
+  popluate('featured');
+  popluate('recent');
+  popluate('all_books');
 };
 
 startApp();
