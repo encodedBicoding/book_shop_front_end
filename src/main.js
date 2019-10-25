@@ -13,7 +13,7 @@ const books = [
   },
   {
     is_available: true,
-    cover_image: 'https://images-eu.ssl-images-amazon.com/images/I/514H6h597qL.jpg',
+    cover_image: 'https://images-na.ssl-images-amazon.com/images/I/518KlDL92eL.jpg',
     alt:'effective_python',
     title: 'Effective Python',
     genre: ['Motivational'],
@@ -73,7 +73,7 @@ const books = [
   },
   {
     is_available: true,
-    cover_image: 'https://images-eu.ssl-images-amazon.com/images/I/514H6h597qL.jpg',
+    cover_image: 'https://images-na.ssl-images-amazon.com/images/I/518KlDL92eL.jpg',
     alt:'effective_python',
     title: 'Effective Python',
     genre: ['Motivational'],
@@ -133,7 +133,7 @@ const books = [
   },
   {
     is_available: true,
-    cover_image: 'https://images-eu.ssl-images-amazon.com/images/I/514H6h597qL.jpg',
+    cover_image: 'https://images-na.ssl-images-amazon.com/images/I/518KlDL92eL.jpg',
     alt:'effective_python',
     title: 'Effective Python',
     genre: ['Motivational'],

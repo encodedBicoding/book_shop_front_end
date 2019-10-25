@@ -219,7 +219,8 @@
 /* 
   Carousel for featured books
 */
-.featured_books{
+.featured_books,
+.recently_added{
   margin: 0;
   margin-bottom: 8%;
 }
@@ -408,6 +409,7 @@
 .recently_added_books,
 .all_available_books{
   width: 100%;
+  padding-top: 15px;
 }
 
 .all_available_books{
