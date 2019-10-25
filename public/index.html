@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href='../styles/main.css'>
+  <title>Quidax book club</title>
+</head>
+<body>
+  <section class='top_nav'>
+    <div class="nav_flex">
+      <div class="nav_header_logo">
+        <img src='https://toppng.com/public/uploads/preview/experience-the-discussion-online-library-book-logo-11562996058ru4peza6zq.png' alt='//'/>
+        <h3 class="logo_title">
+          Quidax Book Club
+          <p>Admin</p>
+        </h3>
+      </div>
+      <div class="nav_search top_nav_item">
+          <input
+            class="nav_search_item search_box"
+            type="text"
+            placeholder="Search books,genres,authors,etc"
+          />
+          <button
+            class="search_btn nav_search_item"
+          >
+          <span class="fa fa-search"></span>
+          </button>
+      </div>
+      <div class="nav_options top_nav_item">
+         <div class="nav_options_item">
+          <img
+            src="https://toppng.com/public/uploads/preview/experience-the-discussion-online-library-book-logo-11562996058ru4peza6zq.png"
+            alt="//"
+          />
+         </div>
+      </div>
+    </div>
+  </section>
+    <section class="left_nav">
+      <div class="nav_section">
+        <div class="nav_list_section nav_section_dashboard">
+          <ul class="nav_list_holder">
+            <li class="nav_list_item home active">Home</li>
+            <li class="nav_list_item profile">Profile</li>
+            <li class="nav_list_item notif">
+              Notifications
+              <span class="notif_count_holder list_right_float">
+                <span class="notif_count">3</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_list_section nav_section_dashboard explore">
+            <h5 class="nav_section_title">Explore</h5>
+            <ul class="nav_list_holder">
+              <li class="nav_list_item books">
+                Books
+                <span class="list_right_float item_count">
+                    <span class="">273</span>
+                  </span>
+              </li>
+              <li class="nav_list_item genres">
+                  Genres
+                  <span class="list_right_float item_count">
+                      <span class="">42</span>
+                  </span>
+              </li>
+              <li class="nav_list_item authors">
+                  Authors
+                  <span class="list_right_float item_count">
+                      <span class="">106</span>
+                    </span>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_list_section nav_section_dashboard my_books">
+              <h5 class="nav_section_title">My Books</h5>
+              <ul class="nav_list_holder">
+                <li class="nav_list_item queued">
+                  Queued
+                  <span class="list_right_float item_count">
+                      <span class="">1</span>
+                    </span>
+                </li>
+                <li class="nav_list_item curr_borrowed">
+                    Currently Borrowed
+                    <span class="list_right_float item_count">
+                        <span class="">0</span>
+                    </span>
+                </li>
+                <li class="nav_list_item favourites">
+                    Favourites
+                    <span class="list_right_float item_count">
+                        <span class="">19</span>
+                      </span>
+                </li>
+                <li class="nav_list_item history">
+                    History
+                </li>
+              </ul>
+            </div>
+            <div class="nav_list_section nav_section_dashboard admin">
+                <h5 class="nav_section_title">Admin</h5>
+                <ul class="nav_list_holder">
+                  <li class="nav_list_item book_request">
+                    Book Requests
+                    <span class="list_right_float item_count book_request_holder">
+                        <span class="request_count">2</span>
+                      </span>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </section>
+    <section class="book_shelf">
+      <div class='book_container'>
+        <div class="ab_lne_left left_lne">
+          <span class="fa fa-caret-left"></span>
+        </div>
+        <div class="ab_lne_right right_lne">
+            <span class="fa fa-caret-right"></span>
+          </div>
+        <section class="book_place">
+          <div class="featured_book book_place_item">
+           <h5>FEATURED BOOKS</h5>
+           <div class='featured_books'></div>
+          </div>
+        </section>
+        <section class="book_place">
+            <div class="recently_added book_place_item">
+             <h5>RECENTLY ADDED</h5>
+             <div class='recently_added_books'></div>
+            </div>
+        </section>
+        <section class="book_place">
+            <div class="all_books book_place_item">
+             <h5>ALL BOOKS</h5>
+             <div class='all_available_books'></div>
+            </div>
+        </section>
+        <section class="book_place">
+            <div class="featured_book book_place_item">
+             <h5>FEATURED BOOKS</h5>
+            </div>
+        </section>
+        <section class="book_place">
+            <div class="featured_book book_place_item">
+             <h5>FEATURED BOOKS</h5>
+            </div>
+          </section>
+          <section class="book_place">
+              <div class="featured_book book_place_item">
+               <h5>FEATURED BOOKS</h5>
+              </div>
+          </section>
+          <section class="book_place">
+              <div class="featured_book book_place_item">
+               <h5>FEATURED BOOKS</h5>
+              </div>
+          </section>
+          <section class="book_place">
+              <div class="featured_book book_place_item">
+               <h5>FEATURED BOOKS</h5>
+              </div>
+          </section>
+          <section class="book_place">
+              <div class="featured_book book_place_item">
+               <h5>FEATURED BOOKS</h5>
+              </div>
+            </section>
+            <section class="book_place">
+                <div class="featured_book book_place_item">
+                 <h5>FEATURED BOOKS</h5>
+                </div>
+            </section>
+            <section class="book_place">
+                <div class="featured_book book_place_item">
+                 <h5>FEATURED BOOKS</h5>
+                </div>
+            </section>
+            <section class="book_place">
+                <div class="featured_book book_place_item">
+                 <h5>FEATURED BOOKS</h5>
+                </div>
+            </section>
+            <section class="book_place">
+                <div class="featured_book book_place_item">
+                 <h5>FEATURED BOOKS</h5>
+                </div>
+              </section>
+              <section class="book_place">
+                  <div class="featured_book book_place_item">
+                   <h5>FEATURED BOOKS</h5>
+                  </div>
+              </section>
+              <section class="book_place">
+                  <div class="featured_book book_place_item">
+                   <h5>FEATURED BOOKS</h5>
+                  </div>
+              </section>
+              <section class="book_place">
+                  <div class="featured_book book_place_item">
+                   <h5>FEATURED BOOKS</h5>
+                  </div>
+              </section>
+              <section class="book_place">
+                  <div class="featured_book book_place_item">
+                   <h5>FEATURED BOOKS</h5>
+                  </div>
+                </section>
+                <section class="book_place">
+                    <div class="featured_book book_place_item">
+                     <h5>FEATURED BOOKS</h5>
+                    </div>
+                </section>
+                <section class="book_place">
+                    <div class="featured_book book_place_item">
+                     <h5>FEATURED BOOKS</h5>
+                    </div>
+                </section>
+                <section class="book_place">
+                    <div class="featured_book book_place_item">
+                     <h5>FEATURED BOOKS</h5>
+                    </div>
+                </section>
+                <section class="book_place">
+                    <div class="featured_book book_place_item">
+                     <h5>FEATURED BOOKS</h5>
+                    </div>
+                  </section>
+                  <section class="book_place">
+                      <div class="featured_book book_place_item">
+                       <h5>FEATURED BOOKS</h5>
+                      </div>
+                  </section>
+                  <section class="book_place">
+                      <div class="featured_book book_place_item">
+                       <h5>FEATURED BOOKS</h5>
+                      </div>
+                  </section>
+                  <section class="book_place">
+                      <div class="featured_book book_place_item">
+                       <h5>FEATURED BOOKS</h5>
+                      </div>
+                  </section>
+                  <section class="book_place">
+                      <div class="featured_book book_place_item">
+                       <h5>FEATURED BOOKS</h5>
+                      </div>
+                    </section>
+                    <section class="book_place">
+                        <div class="featured_book book_place_item">
+                         <h5>FEATURED BOOKS</h5>
+                        </div>
+                    </section>
+                    <section class="book_place">
+                        <div class="featured_book book_place_item">
+                         <h5>FEATURED BOOKS</h5>
+                        </div>
+                    </section>
+                    <section class="book_place">
+                        <div class="featured_book book_place_item">
+                         <h5>FEATURED BOOKS</h5>
+                        </div>
+                    </section>
+                    <section class="book_place">
+                        <div class="featured_book book_place_item">
+                         <h5>FEATURED BOOKS</h5>
+                        </div>
+                      </section>
+                      <section class="book_place">
+                          <div class="featured_book book_place_item">
+                           <h5>FEATURED BOOKS</h5>
+                          </div>
+                      </section>
+                      <section class="book_place">
+                          <div class="featured_book book_place_item">
+                           <h5>FEATURED BOOKS</h5>
+                          </div>
+                      </section>
+                      <section class="book_place">
+                          <div class="featured_book book_place_item">
+                           <h5>FEATURED BOOKS</h5>
+                          </div>
+                      </section>
+                      <section class="book_place">
+                          <div class="featured_book book_place_item">
+                           <h5>FEATURED BOOKS</h5>
+                          </div>
+                        </section>
+                        <section class="book_place">
+                            <div class="featured_book book_place_item">
+                             <h5>FEATURED BOOKS</h5>
+                            </div>
+                        </section>
+                        <section class="book_place">
+                            <div class="featured_book book_place_item">
+                             <h5>FEATURED BOOKS</h5>
+                            </div>
+                        </section>
+                        <section class="book_place">
+                            <div class="featured_book book_place_item">
+                             <h5>FEATURED BOOKS</h5>
+                            </div>
+                        </section>
+                        <section class="book_place">
+                            <div class="featured_book book_place_item">
+                             <h5>FEATURED BOOKS</h5>
+                            </div>
+                          </section>
+                          <section class="book_place">
+                              <div class="featured_book book_place_item">
+                               <h5>FEATURED BOOKS</h5>
+                              </div>
+                          </section>
+                          <section class="book_place">
+                              <div class="featured_book book_place_item">
+                               <h5>FEATURED BOOKS</h5>
+                              </div>
+                          </section>
+                          <section class="book_place">
+                              <div class="featured_book book_place_item">
+                               <h5>FEATURED BOOKS</h5>
+                              </div>
+                          </section>
+                          <section class="book_place">
+                              <div class="featured_book book_place_item">
+                               <h5>FEATURED BOOKS</h5>
+                              </div>
+                            </section>
+                            <section class="book_place">
+                                <div class="featured_book book_place_item">
+                                 <h5>FEATURED BOOKS</h5>
+                                </div>
+                            </section>
+                            <section class="book_place">
+                                <div class="featured_book book_place_item">
+                                 <h5>FEATURED BOOKS</h5>
+                                </div>
+                            </section>
+                            <section class="book_place">
+                                <div class="featured_book book_place_item">
+                                 <h5>FEATURED BOOKS</h5>
+                                </div>
+                            </section>
+                            <section class="book_place">
+                                <div class="featured_book book_place_item">
+                                 <h5>FEATURED BOOKS</h5>
+                                </div>
+                              </section>
+                              <section class="book_place">
+                                  <div class="featured_book book_place_item">
+                                   <h5>FEATURED BOOKS</h5>
+                                  </div>
+                              </section>
+                              <section class="book_place">
+                                  <div class="featured_book book_place_item">
+                                   <h5>FEATURED BOOKS</h5>
+                                  </div>
+                              </section>
+                              <section class="book_place">
+                                  <div class="featured_book book_place_item">
+                                   <h5>FEATURED BOOKS</h5>
+                                  </div>
+                              </section>
+                              <section class="book_place">
+                                  <div class="featured_book book_place_item">
+                                   <h5>FEATURED BOOKS</h5>
+                                  </div>
+                                </section>
+                                <section class="book_place">
+                                    <div class="featured_book book_place_item">
+                                     <h5>FEATURED BOOKS</h5>
+                                    </div>
+                                </section>
+                                <section class="book_place">
+                                    <div class="featured_book book_place_item">
+                                     <h5>FEATURED BOOKS</h5>
+                                    </div>
+                                </section>
+                                <section class="book_place">
+                                    <div class="featured_book book_place_item">
+                                     <h5>FEATURED BOOKS</h5>
+                                    </div>
+                                </section>
+
+      </div>
+    </section>
+  <script async src='../src/main.js'></script>
+</body>
+</html>

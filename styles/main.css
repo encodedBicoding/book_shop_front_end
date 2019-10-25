@@ -1,0 +1,348 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  box-sizing: border-box;
+}
+.top_nav{
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  background-color: transparent;
+}
+.top_nav_item{
+  padding: 20px;
+}
+.nav_flex{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 20px;
+  border: none;
+  box-shadow: 2px 1px 10px 0 rgba(160, 149, 149, 0.1);
+  background-color: #fff;
+  z-index: 1;
+}
+.nav_header_logo{
+  margin-left: 2%;
+  padding: 0;
+}
+.nav_header_logo img,
+.nav_header_logo h3{
+  display: inline-block;
+  position: relative;
+}
+.nav_header_logo img{
+  border: 1px solid #000;
+  position: relative;
+  top: 17%;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 2px;
+  margin-right: 8px;
+}
+.logo_title p{
+  color: grey;
+  font-size: 11px;
+}
+.logo_title{
+  font-size: 18px;
+  font-weight: lighter;
+  top: 1%;
+  margin-left: 3px;
+}
+.nav_search{
+  display: flex;
+  margin-left: 13%;
+  align-self: center;
+  width: 40%;
+  padding: 0;
+  margin-right:0;
+}
+.search_box{
+  display: inline-block;
+  padding: 12px;
+  margin: 0;
+  width: 89%;
+  outline: none;
+}
+.search_btn{
+  padding: 4px;
+  outline: none;
+  background-color: none;
+  width: 7%;
+  margin-left: -3px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.nav_options{
+  margin-left: 19%;
+  padding: 6px;
+}
+.nav_options_item{
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.nav_options_item img{
+  position: relative;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.left_nav{
+  position: fixed;
+  margin-top: 89px;
+  float: left;
+  padding: 10px;
+  background-color: #4ab;
+  width: 25%;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 0 1px 0 rgba(155, 151, 151, 0.1);
+}
+.nav_list_section{
+  padding: 6px;
+  border-bottom: .9px solid rgba(155, 151, 151, 0.2);
+}
+.nav_list_holder{
+  list-style-type: none;
+  margin-left: 9%;
+}
+.nav_section_title {
+  margin: 13% 0 9% 9%;
+}
+.nav_list_holder li{
+  margin: 13px 0 13px 0;
+  font-size: 13px;
+}
+.nav_list_holder .active{
+  color: rgb(17, 204, 17);
+}
+.notif .notif_count_holder,
+.book_request .book_request_holder{
+  color: #fff;
+  font-size: 11px;
+  border-radius: 41%;
+  background-color: rgb(17, 204, 17);
+}
+.list_right_float{
+  float: right;
+  width: 20px;
+  height: 18px;
+  text-align: center;
+  padding: 3px;
+}
+.books .item_count,
+.genres .item_count,
+.authors .item_count,
+.queued .item_count,
+.curr_borrowed .item_count,
+.favourites .item_count{
+  font-size: 10px;
+  color: grey;
+}
+.book_container{
+  margin-left: 26%;
+  margin-top: 7%;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  background-color: rgba(245, 241, 241, 0.959);
+}
+.book_shelf{
+  position: absolute;
+  will-change: contents;
+  width: 100%;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(245, 241, 241, 0.959);
+}
+.ab_lne_left{
+  position: absolute;
+  height: 100%;
+  margin-top: 0;
+  margin-left: -2%;
+  background-color: rgba(255,255,255,.6);
+  border-right: 2px solid #fff;
+}
+.ab_lne_right{
+  position: absolute;
+  height: 100%;
+  padding: 1%;
+  margin-top: 0;
+  background-color: rgba(255,255,255,.6);
+  border-left: 2px solid #fff;
+}
+.right_lne{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 15px;
+  right: 0;
+  z-index: 1;
+}
+.left_lne{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 15px;
+}
+.left_lne span,
+.right_lne span{
+  position: sticky;
+  top: 45%;
+}
+.book_place{
+  margin-left: 2.3%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.book_place_item h5,
+.recently_added h5,
+.all_books h5{
+  font-size: 12px;
+  margin: 0;
+  letter-spacing: 6px;
+  font-weight: lighter;
+  padding-bottom: 1%;
+  border-bottom: .9px solid rgba(155, 151, 151, 0.2);
+}
+
+/* 
+  Carousel for featured books
+*/
+.featured_books{
+  margin: 0;
+  margin-bottom: 8%;
+}
+.featured_books_cell{
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin-right: 14px; 
+  margin-top: 1%;
+  z-index: 1;
+  cursor: pointer;
+}
+.featured_books_cell:hover .abs_dt{
+  opacity: 1;
+}
+.featured_books_cell img{
+  height: 300px;
+  width: 200px;
+}
+.abs_dt{
+  position: absolute;
+  opacity: 0;
+  background-image: linear-gradient(to bottom, rgba(000,000,000,.6) ,rgba(000,000,000.2));
+  width: 200px;
+  height: 300px;
+  flex-direction: column;
+  transition: all .5s;
+  color: rgb(219, 214, 214);
+}
+
+.book_details{
+  position: relative;
+  margin-top: 50%;
+  margin-left: 15%;
+  letter-spacing: normal;
+}
+.bk_flex{
+  display: flex;
+  flex-direction: column;
+}
+.bdl_avial{
+  font-size: 11px;
+  margin-bottom: 9%;
+}
+.av{
+  color:rgb(17, 204, 17);
+}
+.nt_av{
+  color: red;
+}
+.bk_t #bk_t_h{
+  font-size: 15px;
+}
+.bk_t #bt_t_a{
+  font-size: 10px;
+  margin-top: 7px;
+}
+.bk_t #bt_t_y,
+.bk_type span,
+.rgt_rt_c span{
+  font-size: 10px;
+}
+.bk_type #bk_type_g,
+.rgt_rt_c #rgt_rt{
+  font-size: 11px;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 9%;
+  padding: 0;
+}
+.rgt{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+.flx_rw{
+  display: flex;
+  margin-left: 4%;
+  margin-top: 4%;
+  flex-direction: row;
+  text-align: center;
+}
+.rgt_rt_c{
+  width: 55%;
+  margin: 0;
+  border-right: .8px solid grey;
+}
+.rgt_rt_star{
+  width: fit-content;
+}
+.rgt_rt_star span.active{
+  font-size: 14px;
+  margin-right: 3px;
+  color: goldenrod;
+}
+.rgt_rt_star span.inactive{
+  font-size: 14px;
+  margin-right: 3px;
+  color: gray;
+}
+.rgt_rt_lt{
+  margin-left: 10%;
+  margin-right: 4%;
+}
+.rgt_rt_lt p{
+  font-size: 10px;
+  margin-top: 8%;
+}
+.rgt_rt_lt span{
+  color: grey
+}
+/* Flickity styles to sooth my taste */
+.flickity-page-dots{
+  opacity: 1;
+  background-color: green;
+  display: none
+}
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: -42%;
+  z-index: 0;
+  overflow: scroll;
+}
+.flickity-button{
+  display: none;
+}
