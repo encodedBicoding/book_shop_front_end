@@ -1,3 +1,4 @@
+
 const books = [
   {
     is_available: true,
@@ -241,6 +242,9 @@ const startApp = () => {
   function createFeatChild(obj) {
     return `
     <div class='book_details_container abs_dt'>
+      <div class='mobile_responsive hide_abs_dt'>
+        <span class='fa fa-close'></span>
+      </div>
       <div class='book_details bk_flex'>
         <p class='${obj.is_available ? 'bdl av bdl_avial' : 'bdl nt_av bdl_avial'}'>
         ${obj.is_available ? 'Available' : 'Borrowed Out'}
@@ -277,7 +281,12 @@ const startApp = () => {
         </div>
       </div>
   </div>
-  <img src='${obj.cover_image}' alt='${obj.alt}'> `
+  <div>
+    <div class='mobile_responsive mob_option_wrap'>
+      <span class='mob_option_icon fa fa-ellipsis-v'></span>
+    </div>
+    <img src='${obj.cover_image}' alt='${obj.alt}'>
+  <div> `
   }
 
   function createRecentAddedComponent(obj) {

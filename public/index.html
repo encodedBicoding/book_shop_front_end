@@ -8,11 +8,65 @@
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <link rel="stylesheet" href='../styles/main.css'>
+  <link rel="stylesheet" href='../styles/mobile.css'>
   <title>Quidax book club</title>
 </head>
 <body>
   <section class='top_nav'>
+    <div class='mobile_responsive'>
+      <div class='mb_nav_flex'>
+          <span class="fa fa-arrow-left back"></span>
+          <div class="mb_search_box">
+            <input
+              placeholder="Search"
+              type="text"
+            />
+            <button class='mb_search_box_btn'>
+              <span class="fa fa-search"></span>
+            </button>
+          </div>
+      </div>
+    </div>
     <div class="nav_flex">
+      <!-- Mobile view nav Styles -->
+      <div class='mobile_responsive'>
+        <span class="fa fa-bars toggle_nav"></span>
+      </div>
+      <div class="mobile_responsive">
+        <div class='mobile_nav_h_logo'>
+            <img src='https://toppng.com/public/uploads/preview/experience-the-discussion-online-library-book-logo-11562996058ru4peza6zq.png' alt='//'/>
+        </div>
+      </div>
+      <div class="mobile_responsive">
+        <div class='mobile_search_icon'>
+          <span class='fa fa-search'></span>
+        </div>
+      </div>
+      <div class="mobile_responsive">
+          <div class="mobile_nav_options">
+           <img
+             src="https://toppng.com/public/uploads/preview/experience-the-discussion-online-library-book-logo-11562996058ru4peza6zq.png"
+             alt="//"
+           />
+          </div>
+       </div>
+      <div class="mobile_responsive">
+        <div class='mobile_notification_icon'>
+          <div class='mob_notify_count'>
+              <span>3</span>
+          </div>
+          <span class="fa fa-bell"></span>
+        </div>
+      </div>
+      <div class="mobile_responsive">
+          <div class='mobile_user_icon'>
+            <img
+              src='https://tikvid.com/img/bill_nye_the_cancer_guy.jpg?aHR0cHM6Ly9wMTYubXVzY2RuLmNvbS9pbWcvbXVzaWNhbGx5LW1hbGl2YS1vYmovMTYzNzE4NTE1MDAzOTA0Nn5jNV8zMDB4MzAwLndlYnA='
+              alt='//'
+            />
+          </div>
+        </div>
+      <!-- Web view Nav Styles -->
       <div class="nav_header_logo">
         <img src='https://toppng.com/public/uploads/preview/experience-the-discussion-online-library-book-logo-11562996058ru4peza6zq.png' alt='//'/>
         <h3 class="logo_title">
@@ -42,8 +96,20 @@
       </div>
     </div>
   </section>
-    <section class="left_nav">
+    <section class="left_nav mob_left_nav">
       <div class="nav_section">
+        <div class="mobile_responsive lf_mob_nv">
+          <div class="lf_nv_back">
+            <span class='fa fa-arrow-left back'></span>
+          </div>
+          <div class='lf_logo_flex'>
+            <img src='https://toppng.com/public/uploads/preview/experience-the-discussion-online-library-book-logo-11562996058ru4peza6zq.png' alt='//'/>
+            <div class='lf_title'>
+              <h4>Quidax Book Club</h4>
+              <p>Admin</p>
+            </div>
+          </div>
+        </div>
         <div class="nav_list_section nav_section_dashboard">
           <ul class="nav_list_holder">
             <li class="nav_list_item home active">Home</li>
@@ -112,7 +178,16 @@
                     Book Requests
                     <span class="list_right_float item_count book_request_holder">
                         <span class="request_count">2</span>
+                    </span>
+                  </li>
+                  <li class="nav_list_item members mobile_responsive">
+                      Members
+                      <span class="list_right_float item_count item_count">
+                          <span class="request_count">34</span>
                       </span>
+                  </li>
+                  <li class="nav_list_item library_settings mobile_responsive">
+                      Library Settings
                   </li>
                 </ul>
               </div>
@@ -147,5 +222,6 @@
       </div>
     </section>
   <script async src='../src/main.js'></script>
+  <script async src='../src/mobile.js'></script>
 </body>
 </html>
