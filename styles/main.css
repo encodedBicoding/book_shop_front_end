@@ -6,6 +6,9 @@
   overscroll-behavior-y: none;
   box-sizing: border-box;
 }
+.mobile_responsive{
+  display: none;
+}
 .top_nav{
   position: fixed;
   background-color: #fff;
@@ -142,7 +145,8 @@
 .authors .item_count,
 .queued .item_count,
 .curr_borrowed .item_count,
-.favourites .item_count{
+.favourites .item_count,
+.members .item_count{
   font-size: 10px;
   color: grey;
 }
@@ -232,9 +236,6 @@
   margin-top: 1%;
   z-index: 1;
   cursor: pointer;
-}
-.featured_books_cell:hover .abs_dt{
-  opacity: 1;
 }
 .featured_books_cell img{
   height: 300px;
@@ -389,10 +390,8 @@
   color: gray;
   font-size: 12px;
 }
-/* Flickity styles to sooth my taste */
+/* Flickity styles */
 .flickity-page-dots{
-  opacity: 1;
-  background-color: green;
   display: none
 }
 .flickity-slider {
@@ -437,4 +436,28 @@
 .ra_flx img{
   width: 43%;
   height: 40%;
+}
+.omo{
+  position: absolute;
+  font-size: .7em;
+  width: 37%;
+  background-color: #fff;
+  box-shadow: 1px 12px 21px 0 rgba(0,0,0,.3);
+  padding: 4px;
+  margin-top: 3.5%;
+  display: none;
+  transition: all .4s;
+}
+.atc_p{
+  padding: 7px;
+  cursor: pointer;
+}
+.atc_p:hover{
+  background-color: rgb(240, 234, 234);
+}
+
+@media screen and (min-width: 1020px){
+  .featured_books_cell:hover .abs_dt{
+    opacity: 1;
+  }
 }

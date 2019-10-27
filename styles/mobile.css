@@ -1,0 +1,354 @@
+@media screen and (max-width: 769px) {
+  *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .mobile_responsive{
+    display: block;
+  }
+  .nav_header_logo,
+  .nav_search,
+  .nav_options,
+  .featured_book h5{
+    display: none;
+  }
+  body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background-color: rgba(245, 241, 241, 0.959);
+  }
+  .top_nav{
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .nav_flex{
+    padding: 1.6%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mb_nav_flex{
+    position: absolute;
+    padding: 1.9%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 0;
+    transition: all .5s;
+  }
+  .mb_nav_flex .back{
+    font-size: 1.1em;
+    margin-left: 1.3em;
+  }
+  .mb_search_box{
+    margin: 0 0 0 8%;
+    width: 80%;
+    align-items: center;
+  }
+  .mb_search_box input{
+    padding: 1em 0 1em 1em;
+    text-align: left;
+    outline: none;
+    width: 80%;
+    border: .3px solid rgb(221, 221, 221);
+  }
+  .mb_search_box_btn{
+    position: relative;
+    background-color: #fff;
+    border: .3px solid rgb(221, 221, 221);
+    padding: .5em;
+    outline: none;
+    left: -7px;
+    top: 2px;
+    font-size: 1em;
+    margin: 0;
+  }
+  .toggle_nav{
+    position: relative;
+    margin: 0 0 0 1.2em;
+    font-size: 1.2em;
+  }
+  .mobile_nav_h_logo{
+    position: relative;
+    margin: 0 5em 0 2.1em;
+    float: left;
+    padding: 0;
+    width: 3em;
+    height: 3em;
+  }
+  .mobile_search_icon{
+    position: relative;
+    float: left;
+    font-size: 1.1em;
+    padding: 0;
+    margin: 0 1em 0 -2em;
+  }
+  .mobile_notification_icon{
+    position: relative;
+    float: left;
+    padding: 7px;
+    margin: 0 1em 0 1em;
+  }
+  .mobile_notification_icon .fa{
+    font-size: 1.3em;
+  }
+  .mob_notify_count{
+    position: absolute;
+    background-color: rgb(17, 204, 17);
+    border-radius: 52%;
+    width: 18px;
+    height: 18px;
+    left: 16px;
+    text-align: center;
+    bottom: 19px;
+    box-shadow: 1px 3px 15px 0 rgba(0,0,0,.4);
+  }
+  .mob_notify_count span{
+    position: relative;
+    font-size: .8em;
+    color: #fff;
+    padding: 0;
+  }
+  .mobile_nav_options,
+  .mobile_user_icon{
+    padding: 0;
+    position: relative;
+    float: left;
+  }
+  .mobile_nav_h_logo img,
+  .mobile_user_icon img,
+  .lf_logo_flex img{
+    position: relative;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .mobile_user_icon img{
+    border: none;
+  }
+  .mobile_nav_options img{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+  }
+  .mob_left_nav{
+    position: fixed;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 65%;
+    height: 100%;
+    margin-left: -75%;
+    transition: all .5s;
+  }
+  .book_shelf{
+    position: relative;
+    width: 100%;
+    margin: 25% 0 0 0;
+    padding: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .book_place{
+    margin-top: 5% 0 2% 0;
+    padding: 0;
+  }
+  .book_container{
+    margin: 0;
+    padding: 0;
+  }
+  .left_lne,
+  .right_lne{
+    padding: 0;
+  }
+  .lf_mob_nv{
+    padding: 0;
+    margin: 1em 1.4em;
+    width: 100%;
+  }
+  .lf_nv_back{
+    padding: 0 0 .9em 0;
+    font-size: 1.4em;
+  }
+  .lf_logo_flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .lf_logo_flex h4{
+    font-weight: lighter;
+    font-size: 1.0em;
+  }
+  .lf_logo_flex .lf_title{
+    margin-left: 1em;
+  }
+  .lf_title p{
+    color: rgb(170, 170, 170);
+    font-size: .7em;
+    padding-top: .5em;
+  }
+  .nav_list_section{
+    padding: 4px;
+    border-bottom: .9px solid rgba(155, 151, 151, 0.2);
+  }
+  .list_right_float{
+    margin-right: 1.2em;
+  }
+  .nav_section_title {
+    margin: 3% 0 5% 9%;
+  }
+  .nav_list_holder li{
+    margin: 6px 0 12px 0;
+    font-size: 13px;
+  }
+  .left_lne{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 1;
+    padding: 1px;
+  }
+  .right_lne{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1px;
+    right: 0;
+  }
+  .left_lne span,
+  .right_lne span{
+    position: sticky;
+    top: 2%;
+  }
+  /* Flickity Slider */
+  .flickity-slider {
+    position: relative;
+    margin: 0 0 0 -29%;
+    width: 100%;
+  }
+
+  /* End Flickity SLider */
+
+  .featured_books,
+  .recently_added{
+      margin: 0 0 24% 0;
+  }
+  .featured_books_cell{
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin-right: 7px; 
+    z-index: 0;
+  }
+  .featured_books_cell img{
+    position: relative;
+    height: 230px;
+    width: 150px;
+    border-radius: 3px;
+    padding: 0;
+  }
+  .abs_dt{
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(000,000,000,.6) ,rgba(000,000,000.2));
+    width: 150px;
+    height: 230px;
+    transition: all .5s;
+    color: rgb(219, 214, 214);
+    z-index: 1;
+    border-radius: 3px;
+    display: block;
+  }
+  .book_details{
+    position: relative;
+    margin-top: 19%;
+    margin-left: 9%;
+    letter-spacing: normal;
+  }
+  .rgt_rt_star span.active{
+    font-size: .7em;
+    margin:0;
+    color: goldenrod;
+  }
+  .rgt_rt_star span.inactive{
+    font-size: .7em;
+    margin: 0;
+    color: grey
+  }
+  .rgt_rt_c #rgt_rt{
+    font-size: .5em;
+    display: inline;
+    font-weight: bold;
+    padding: 0;
+  }
+  .rgt_rt_c span{
+    font-size: .3em;
+  }
+  .mob_option_icon{
+    position: relative;
+    top: 5%;
+    color:grey;
+    font-size: .9em;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  .mob_option_wrap{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: 7%;
+    top: 2%;
+    background-color: rgb(252, 252, 252);
+    border-radius: 52%;
+    text-align: center;
+    box-shadow: 1px 8px 15px 0 rgba(0,0,0,.7);
+    z-index: 1;
+  }
+  .hide_abs_dt{
+    float: right;
+    margin: 3% 7% 0 0;
+  }
+  .r_a_container{
+    display: block;
+    width: 100%;
+    margin-top: 4%;
+  }
+  .ra_flx{
+    display: flex;
+  }
+  .rgt_rt_c_ra{
+    width: 40%;
+    margin: 0;
+    border-right: .6px solid grey;
+  }
+  .ra_flx_rt{
+    margin-top: 5%
+  }
+  .lt_bk_dt{
+    margin-top: 9%;
+  }
+  .omo{
+    width: 60%;
+    padding: 4px;
+    margin-top: 8%;
+  }
+}

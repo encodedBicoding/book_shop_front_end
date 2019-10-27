@@ -26,6 +26,12 @@ created a books data array to dynamically fill up some HTML pages.
 # /styles
 This folder contains all the styles used in this project.
 
+# Blockers
+The algorithm used on the search box is still efficient. I will keep working on that even after submitting.
+
+# Mobile Responsiveness
+This project focuses on the iPhone6/7/8 Plus with viewport of 414 * 736
+
 Alright, That will be all the information I dish out today.
 
 Thank you!.
