@@ -1,5 +1,5 @@
-var isMobile = false; //initiate as false
-// device detection
+var isMobile = false;
+
 if (/Mobi|Android/i.test(navigator.userAgent)) {
   isMobile = true;
 }

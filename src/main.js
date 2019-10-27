@@ -1,4 +1,4 @@
-
+let count = 0;
 const books = [
   {
     is_available: true,
@@ -182,9 +182,12 @@ const books = [
   }
 ]
 const startApp = () => {
+  let show = [];
   const featured_image_container = document.querySelector('.featured_books');
   const recently_added_books = document.querySelector('.recently_added_books');
   const all_books = document.querySelector('.all_available_books');
+  const input_search = document.querySelectorAll('.sh_input');
+  const auto_complete = document.querySelectorAll('.s_auto');
   
   function popluate(component){
     if(component === 'featured') {
@@ -335,8 +338,54 @@ const startApp = () => {
   popluate('featured');
   popluate('recent');
   popluate('all_books');
-};
 
+
+
+  input_search.forEach((i_s) => {
+    i_s.addEventListener('blur', () => {
+      auto_complete.forEach((a_c) => {
+        a_c.style.display ='none'
+      })
+    })
+    i_s.addEventListener('keyup', (e) => {
+      count++;
+      let isDeleting =false;
+      if(i_s.value.length < count){
+        count = i_s.value.length;
+        isDeleting = true;
+      }
+      if(isDeleting) {
+        return;
+      }
+      books.forEach((book, idx) => {
+        if(book.title.toLowerCase().startsWith(e.target.value.toLowerCase())){
+          if(show.findIndex((val) => val === book.title) === -1) {
+            auto_complete.forEach((a_c) => {
+              a_c.style.display ='block'
+
+            })
+            show.push(book.title);
+          }
+        }
+      })
+      show = show.reduce((acc, curr, idx) => {
+          if(acc.findIndex((val) => val === curr) === -1){
+            acc[idx] = curr;
+          }
+          return acc;
+      }, [])
+      show.forEach((val) =>{
+        const p = document.createElement('p');
+        p.setAttribute('class', 'atc_p')
+        p.innerText = val
+        auto_complete.forEach((a_c) => {
+          a_c.appendChild(p)
+        })
+      })
+    })
+  });
+
+};
 startApp();
 
 

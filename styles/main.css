@@ -437,6 +437,24 @@
   width: 43%;
   height: 40%;
 }
+.omo{
+  position: absolute;
+  font-size: .7em;
+  width: 37%;
+  background-color: #fff;
+  box-shadow: 1px 12px 21px 0 rgba(0,0,0,.3);
+  padding: 4px;
+  margin-top: 3.5%;
+  display: none;
+  transition: all .4s;
+}
+.atc_p{
+  padding: 7px;
+  cursor: pointer;
+}
+.atc_p:hover{
+  background-color: rgb(240, 234, 234);
+}
 
 @media screen and (min-width: 1020px){
   .featured_books_cell:hover .abs_dt{
